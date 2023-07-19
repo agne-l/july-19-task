@@ -61,14 +61,13 @@ header ul a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 6rem 2rem;
 }
-
-.text-wrapper {
+.top-wrapper .text-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   gap: 18vw;
+  height: 100%;
 }
 
 .news-and-updates {
@@ -77,14 +76,71 @@ header ul a {
   gap: 0.5vw;
   font-style: italic;
 }
+.news-and-updates a {
+  text-decoration: none;
+  color: #7f7f7f;
+}
 
 .in-the-news {
   font-size: 8vw;
 }
 
+.arrow {
+  height: 100%;
+  display: flex;
+}
+
 .arrow-img {
-  width: 9rem;
-  height: 3rem;
+  width: 2vw;
+  height: 10vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+main {
+  width: 100%;
+}
+
+.articles {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 60vh;
+  gap: 1rem;
+}
+.articles div {
+  background-color: rgb(222, 234, 239);
+  width: 100%;
+}
+
+.load-more-button {
+  all: unset;
+  width: 15%;
+  height: 7%;
+  background-color: rgb(93, 142, 255);
+  margin: auto;
+  margin-top: 2rem;
+  display: block;
+  padding: 1% 2%;
+  box-sizing: border-box;
+}
+.load-more-button a {
+  text-decoration: none;
+  color: rgb(232, 225, 225);
+}
+
+.publication-library-title {
+  width: 95%;
+  margin: auto;
+  margin-top: 1%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 60vh;
+  background-color: pink;
+  margin-bottom: 2rem;
+}
+.publication-library-title div {
+  font-size: 6vw;
 }/*# sourceMappingURL=index.css.map */
