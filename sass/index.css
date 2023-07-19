@@ -8,9 +8,9 @@ header {
   width: 100%;
   height: 6vh;
   background-color: white;
-  padding: 1rem 2rem;
+  padding: 1% 2%;
   box-sizing: border-box;
-  font-weight: 550;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,38 +22,31 @@ header a {
 header .logo {
   font-size: 3vw;
 }
-header .button-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-}
-header .button-wrapper button {
-  all: unset;
-  cursor: pointer;
-}
-
 header ul {
   display: flex;
   list-style: none;
   gap: 3rem;
   padding: 0;
 }
-
+header ul li {
+  font-size: 1vw;
+}
 header ul a {
   text-decoration: none;
   color: #7f7f7f;
 }
-
-.globe-icon {
-  width: 2rem;
-  height: 2rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+header .button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.5vw;
 }
-
-.dash-menu {
-  width: 2rem;
-  height: 2rem;
+header .button-wrapper button {
+  all: unset;
+  cursor: pointer;
+}
+header .button-wrapper button img {
+  width: 2vw;
+  height: 2vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -70,28 +63,25 @@ header ul a {
   gap: 18vw;
   height: 100%;
 }
-
-.news-and-updates {
+.top-wrapper .text-wrapper .news-and-updates {
   display: flex;
   flex-direction: column;
   gap: 0.5vw;
   font-style: italic;
+  font-size: 1vw;
 }
-.news-and-updates a {
+.top-wrapper .text-wrapper .news-and-updates a {
   text-decoration: none;
   color: #7f7f7f;
 }
-
-.in-the-news {
+.top-wrapper .text-wrapper .in-the-news {
   font-size: 8vw;
 }
-
-.arrow {
+.top-wrapper .arrow {
   height: 100%;
   display: flex;
 }
-
-.arrow-img {
+.top-wrapper .arrow img {
   width: 2vw;
   height: 10vh;
   -o-object-fit: cover;
@@ -131,6 +121,27 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.articles .article .date-and-article-headline h3 {
+  margin: 0;
+  color: #7f7f7f;
+  font-size: 1vw;
+  font-weight: 300;
+}
+.articles .article .date-and-article-headline p {
+  margin: 0;
+  font-size: 1.5vw;
+}
+.articles .without-image {
+  padding-left: 2vw;
+  padding-bottom: 2vh;
+  box-sizing: border-box;
+}
+.articles .without-image .date-and-article-headline {
+  width: 60%;
+}
+.articles .without-image .date-and-article-headline p {
+  font-size: 2vw;
 }
 
 .load-more-button {
