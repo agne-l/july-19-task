@@ -9,6 +9,12 @@ $mainTextColor: #7f7f7f;
     align-items: center;
 }
 
+@mixin logoStyles{
+    width:5.8vw;
+    height:4.5vh;
+    object-fit:cover;
+}
+
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,9 +30,10 @@ header{
     font-weight:550;
     @include flexboxCenterAlign ();
     .main-logo{
-        width:6rem;
-        height:2rem;
-        object-fit:cover;
+        @include logoStyles();
+        // width:6rem;
+        // height:2rem;
+        // object-fit:cover;
     }
     .button-wrapper{
         display:flex;
@@ -122,7 +129,7 @@ main{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 60vh;
-    gap:1rem;
+    gap:1%;
     div{
         background-color:rgb(222, 234, 239);
         width:100%;
@@ -133,9 +140,9 @@ main{
     all:unset;
     width:15%;
     height:7%;
-    background-color:rgb(93, 142, 255);
+    background-color:rgb(0, 123, 255);
     margin:auto;
-    margin-top:2rem;
+    margin-top:2%;
     display:block;
     padding:1% 2%;
     box-sizing: border-box;
@@ -153,9 +160,49 @@ main{
     align-items: end;
     justify-content:center;
     height:60vh;
-    background-color: pink;
     margin-bottom:2rem;
     div{
         font-size:6vw;
     }
 }
+
+.publications{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1vw;
+    .square{
+        background-color: rgb(0, 123, 255);
+        width:100%;
+        height:70vh;
+        padding:2% 3%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .text{
+            display:flex;
+            flex-direction:column;
+            gap:4vh;
+        }
+        h2{
+            all:unset;
+            font-size:4vw;
+            color:white;
+            margin:0;
+        }
+        h3{
+            all:unset;
+            color:white;
+            margin:0;
+        }
+    }
+    .main-logo{
+        @include logoStyles();
+    }
+    .square:nth-child(2){
+        background-color: black;
+    }
+}
+
